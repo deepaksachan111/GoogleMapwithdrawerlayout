@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#fff"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <ScrollView
+        android:id="@+id/scrollView_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="200dp">
+
+    <android.support.v4.view.ViewPager
+        android:background="@color/colorPrimary"
+        android:id="@+id/pager_introduction"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/pager_item" />
+
+    <RelativeLayout
+        android:layout_gravity="bottom"
+        android:id="@+id/viewPagerIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/viewPagerCountDots"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+        <ImageButton
+            android:padding="10dp"
+            android:id="@+id/btn_next"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/btn_round_semitransperant"
+            android:src="@drawable/right_arrow" />
+
+        <ImageButton
+            android:padding="10dp"
+            android:id="@+id/btn_finish"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/btn_round_semitransperant"
+            android:contentDescription="Let's start"
+            android:src="@drawable/left_arrow"
+            android:visibility="gone" />
+
+
+
+    </RelativeLayout>
+
+
+    </FrameLayout>
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20dp"
+            android:text="Service in Your Locality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:background="@android:color/darker_gray"
+            android:layout_width="fill_parent"
+            android:layout_height=".1dp"/>
+    <!-- first row....................................................................................................-->
+        <LinearLayout
+            android:background="@drawable/background_border"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                  android:background="#0B8031"
+                android:id="@+id/linearhomecleaning"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/imageview_beauty"
+                    android:layout_gravity="center"
+                    android:src="@drawable/beauty_teen"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:textColor="#fff"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="10dp"
+                    android:text="Beauty Saloon at home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <View
+                android:background="@android:color/darker_gray"
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"/>
+
+            <LinearLayout
+                android:layout_marginLeft=".1dp"
+                android:layout_marginRight="1dp"
+                android:background="#C5423E"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/electoinnics_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:layout_marginBottom="20dp"
+                    android:textColor="#fff"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="10dp"
+                    android:text="Electronics"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:background="#145F87"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/monitor"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:textColor="#fff"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="10dp"
+                    android:text="Computer Repair"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <View
+                android:background="@android:color/darker_gray"
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"/>
+
+
+        </LinearLayout>
+
+
+        <View
+            android:padding="10dp"
+            android:background="@android:color/darker_gray"
+            android:layout_width="fill_parent"
+            android:layout_height=".1dp"/>
+
+        <!-- first row....................................................................................................-->
+
+        <!-- second row....................................................................................................-->
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/linear_visibleheader"
+            android:background="@drawable/background_border"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="#EEB84B"
+
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginTop="20dp"
+
+                    android:layout_gravity="center"
+                    android:src="@drawable/ac_repair"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:textColor="#fff"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="10dp"
+                    android:text="Ac repair &amp; service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <View
+                android:background="@android:color/darker_gray"
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"/>
+
+
+
+            <LinearLayout
+                android:layout_marginLeft=".1dp"
+                android:layout_marginRight="1dp"
+                android:background="#FF4081"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/plumbing_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:layout_marginBottom="20dp"
+                    android:textColor="#fff"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="10dp"
+                    android:text="Plumbing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:background="#7E57C2"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/painting"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:textColor="#fff"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="10dp"
+                    android:text="Painting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <View
+                android:background="@android:color/darker_gray"
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:background="@android:color/darker_gray"
+            android:layout_width="fill_parent"
+            android:layout_height=".1dp"/>
+
+
+        <!-- Thrid row....................................................................................................-->
+
+        <FrameLayout
+            android:padding="10dp"
+            android:id="@+id/framelayot_viewmore_less"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:fontFamily="sans-serif-black"
+                android:id="@+id/tv_viewmore"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                android:text="View More Service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:fontFamily="sans-serif-black"
+                android:visibility="gone"
+                android:id="@+id/tv_less"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                android:text="View Less Service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </FrameLayout>
+
+        <View
+            android:background="@android:color/darker_gray"
+            android:layout_width="fill_parent"
+            android:layout_height=".1dp"/>
+
+       <!-- <LinearLayout
+            android:background="#fff"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Gallery
+                android:id="@+id/gallery"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"></Gallery>
+
+
+
+        </LinearLayout>-->
+
+
+
+      <!--  <LinearLayout
+            android:background="@drawable/pie_images1"
+            android:id="@+id/relative_pie"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="111dp">
+
+
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+
+            <ImageView
+
+                android:src="@drawable/ic_home"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/imageView"
+               />
+
+            <TextView
+                android:text="Breath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+
+                <ImageView
+
+                    android:src="@drawable/ic_home"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    />
+
+                <TextView
+                    android:text="Meditation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+
+                    android:src="@drawable/ic_home"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    />
+
+                <TextView
+                    android:text="Courage is looking fear right.."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>-->
+    </LinearLayout>
+
+
+    </ScrollView>
+</RelativeLayout>
